@@ -1,0 +1,80 @@
+.introducao-background {
+  background-color: #314159;
+}
+
+.introducao {
+  max-width: 75rem;
+  padding: 20px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  background-color: #314159;
+  color: #e8f8ff;
+  gap: 100px;
+  place-items: center center;
+  
+}
+
+
+.introducao h1 {
+  font-size: 4rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+  font-weight: 700;
+}
+
+
+.localizado {
+  display: flex;
+  align-items: center;
+}
+
+
+.introducao h1::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: linear-gradient(#FBA33C, #F2972C);
+  bottom: -13px;
+  position: absolute;
+}
+
+.introducao p {
+  font-weight: 300;
+  font-size: 1rem;
+  color: #CBDBF9;
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+  font-size: 3rem;
+}
+
+@media (max-width: 800px) {
+  .introducao {
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  }
+
+  .introducao h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao .muri {
+    display: none;
+  }
+
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+
+  .introducao h1::before {
+    width: 100%;
+    height: 2px;
+  } 
+} 
